@@ -107,7 +107,7 @@ $payload = @"
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ops:group xmlns:ops="http://webservice.vmware.com/vRealizeOpsMgr/1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <ops:resourceKey>
-<ops:name>$group</ops:name>
+<ops:name>$($group)</ops:name>
 <ops:adapterKindKey>Container</ops:adapterKindKey>
 <ops:resourceKindKey>Environment</ops:resourceKindKey>
 <ops:resourceIdentifiers/>
