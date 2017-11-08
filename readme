@@ -4,7 +4,7 @@ creates a custom group in vRealize Operations manager.
 Usage and notes:
 -server IP or FQDN of vROps analytics node
 -file path to VMC migration export workbook file
--ignoreSSL (default is false) use in non-production with self-signed certificates.  May not work if you are running Powershell without PowerCLI loaded
+-ignoreSSL (default is $false) use $true in non-production with self-signed certificates.  May not work if you are running Powershell without PowerCLI loaded
 -username for vROps
 -password for vROps
 -group optional parameter to specify name of the custom group in vROps - default is 'VMC'

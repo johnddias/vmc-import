@@ -1,10 +1,10 @@
 ﻿param(
     [Parameter(Mandatory=$true)][string]$server,
     [Parameter(Mandatory=$true)][string]$file,
-    [switch]$ignoreSSL,
+    [bool]$ignoreSSL,
     [string]$username,
     [string]$password,
-    [string]$group = 'VMC'
+    [string]$group = 'VMC Migration Candidates'
 )
 
 function trustAllCerts ()
@@ -103,6 +103,10 @@ for ($i=2; $i -le $numRows-1; $i++)
   }
 }
 
+#Creating Group Type
+
+
+#Creating Group
 $payload = @"
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ops:group xmlns:ops="http://webservice.vmware.com/vRealizeOpsMgr/1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
