@@ -127,3 +127,6 @@ $headers.add("Content-Type", "application/xml")
 
 $uri = "https://"+$server+"/suite-api/internal/resources/groups"
 $response = Invoke-RestMethod -Method Post -Uri $uri -Credential $credentials -DisableKeepAlive -Body $payload -Headers $headers
+
+$workbook.close()
+$objExcel.Quit()
