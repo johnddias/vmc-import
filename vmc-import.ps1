@@ -76,7 +76,7 @@ for ($i=2; $i -le $numRows; $i++)
 # Searching for vRealize Operations resource ID of VMs to be added to the custom group
 # Also checking for VMs that may have duplicate names and cross-referencing with Datacenter and Cluster name
 $vmResIDs = @{}
-for ($i=2; $i -le $numRows-1; $i++)
+for ($i=2; $i -le $numRows; $i++)
 {
   $vm = $vmsVROps.GetEnumerator() | Where-Object {$_.value -eq $sheet.Cells.Item($i,1).text}
   if ($vm.Count -eq 0) 
