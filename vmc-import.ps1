@@ -42,8 +42,12 @@ $result
 }
 
 
+if (($username -and $password)) {
 $secure_password = ConvertTo-SecureString -String $password -AsPlainText -Force
 $credentials = New-Object System.Management.Automation.PSCredential($username, $secure_password)
+}
+else { $credentials = Get-Credential }
+
 if ($ignoreSSL) {trustAllCerts}
 
 
