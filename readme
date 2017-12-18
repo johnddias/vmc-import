@@ -11,4 +11,4 @@ Usage and notes:
 -groupType optional parameter to specify group type of the custom group in vROps - default is 'VMC Migration'
 
 Example:
-vmc-import.ps1' -server 10.140.50.30 -file 'C:\Users\diasj\Downloads\vmc_migrations_export_10-30-17.xls' -ignoreSSL true -username admin -password VMware1!
+vmc-import.ps1' -server 10.140.50.30 -file 'C:\Users\diasj\Downloads\vmc_migrations_export_10-30-17.xls' -ignoreSSL 1 -username admin -password VMware1!
